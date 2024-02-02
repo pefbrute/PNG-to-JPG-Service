@@ -1,0 +1,14 @@
+[Unit]
+Description=My Python Script
+
+[Service]
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/home/pefbrute/.Xauthority"
+ExecStart=/usr/bin/python3 '/home/pefbrute/Pictures/Произведения на Продажу-2/Питон.py'
+User=pefbrute
+Group=pefbrute
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
